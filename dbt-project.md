@@ -24,6 +24,11 @@ Your models must support the following analytics use cases:
 9. Driver churn tracking
 10. Fraud detection insights
 
+## Ingestion
+All transactional data for BeejanRide is available in a postgres transactional database.
+
+You must use `Airbyte` to ingest this source data from the transactional database to the data warehouse raw layer.
+
 ## Provided Raw Data
 
 
@@ -107,6 +112,7 @@ Find below the data dictionary of the raw data:
 
 ## Technology Stack
 You must use:
+- Airbyte
 - dbt Core
 - A cloud warehouse (BigQuery or Snowflake recommended)
 - Git & GitHub for version control
