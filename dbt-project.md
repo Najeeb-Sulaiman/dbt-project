@@ -30,7 +30,11 @@ All transactional data for BeejanRide is available in a postgres transactional d
 You must use `Airbyte` to ingest this source data from the transactional database to the data warehouse raw layer.
 
 ## Provided Raw Data
+The connection credentials to the data source would be provided.
 
+Below is the raw data ERD
+
+![ER Diagram](dbt-project-erd.png)
 
 Find below the data dictionary of the raw data:
 ### 1. trips_raw
