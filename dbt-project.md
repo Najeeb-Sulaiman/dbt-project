@@ -55,3 +55,43 @@ You must use:
 | created_at      | Created timestamp             |
 | updated_at      | Updated timestamp             |
 
+### 3. riders_raw
+
+| Column        | Description       |
+| ------------- | ----------------- |
+| rider_id      | Rider ID          |
+| signup_date   | Signup date       |
+| country       | Rider country     |
+| referral_code | Referral used     |
+| created_at    | Created timestamp |
+
+### 4. payments_raw
+
+| Column           | Description       |
+| ---------------- | ----------------- |
+| payment_id       | Payment ID        |
+| trip_id          | Trip ID           |
+| payment_status   | success / failed  |
+| payment_provider | stripe / paypal   |
+| amount           | Charged amount    |
+| fee              | Processing fee    |
+| currency         | Currency          |
+| created_at       | Payment timestamp |
+
+### 5. cities_raw
+
+| Column      | Description      |
+| ----------- | ---------------- |
+| city_id     | City ID          |
+| city_name   | City name        |
+| country     | Country          |
+| launch_date | City launch date |
+
+### 6. driver_status_events_raw (High Volume Table)
+
+| Column          | Description      |
+| --------------- | ---------------- |
+| event_id        | Event ID         |
+| driver_id       | Driver ID        |
+| status          | online / offline |
+| event_timestamp | Event timestamp  |
