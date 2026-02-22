@@ -239,4 +239,4 @@ You must submit:
 4. Sample analytical queries demonstrating insights
 
 ## Duration
-1 week
+2 week (8/03/2026)
