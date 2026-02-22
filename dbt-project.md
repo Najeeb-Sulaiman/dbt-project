@@ -21,6 +21,7 @@ You must use:
 ## Provided Raw Data
 
 
+Find below the data dictionary of the raw data:
 ### 1. trips_raw
 
 | Column           | Description                     |
@@ -95,3 +96,5 @@ You must use:
 | driver_id       | Driver ID        |
 | status          | online / offline |
 | event_timestamp | Event timestamp  |
+
+**Note:** You must not modify raw tables.
