@@ -175,3 +175,28 @@ Track:
 - driver_status changes
 - vehicle changes
 - rating updates
+
+### 5. Incremental Models
+You must use Incremental materialization strategy where appropriate.
+
+You must explain in your README:
+- Why incremental is required
+- Tradeoffs of full refresh vs incremental
+
+### 6. Data Quality
+
+You must implement:
+
+**Generic Tests**
+- not_null
+- unique
+- relationships
+- accepted_values
+
+**Custom Tests**
+- No negative revenue
+- Trip duration > 0
+- Completed trip must have successful payment
+
+**Freshness Tests**
+- trips_raw must be < 2 hours old
