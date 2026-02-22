@@ -1,13 +1,13 @@
 # Building a Production-Grade Analytics Platform with dbt
 ## Project Overview
-You have been hired as a Data Engineer at AtlasRide, a fast-growing UK mobility startup operating in 5 cities.
+You have been hired as a Data Engineer at `BeejanRide`, a fast-growing UK mobility startup operating in 5 cities.
 
-AtlasRide provides:
+`BeejanRide` provides:
 - Ride-hailing
 - Airport transfers
 - Scheduled corporate rides
 
-The company recently migrated to a modern data stack and now needs a production-grade transformation layer using dbt.
+The company recently migrated to a modern data stack and now needs a `production-grade` transformation layer using dbt.
 
 Your task is to design and implement a scalable, well-tested, documented, and production-ready analytics platform using dbt.
 
@@ -123,19 +123,20 @@ raw - staging - intermediate - marts
 Create staging models for each raw table.
 
 The staging models must perform the following where neccessary:
-- Rename columns to snake_case
+- Rename columns to `snake_case`
 - Cast correct data types
 - Deduplicate using primary keys
 - Standardize timestamps
 - Remove invalid or null primary keys
 - Source definitions must include:
-- descriptions
-- freshness checks
-- column tests
+    - descriptions
+    - freshness checks
+    - column tests
 
 ### 2. Intermediate Layer
 
 Create reusable transformation logic.
+
 Must include:
 
 - trip_duration_minutes
@@ -209,6 +210,7 @@ Your project must include:
 - Business metric definitions
 - Owner metadata
 - Tags (finance, operations, fraud)
+
 **You must generate:**
 - dbt docs site
 - Lineage graph
