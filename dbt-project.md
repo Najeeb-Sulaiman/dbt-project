@@ -24,12 +24,6 @@ Your models must support the following analytics use cases:
 9. Driver churn tracking
 10. Fraud detection insights
 
-## Technology Stack
-You must use:
-- dbt Core
-- A cloud warehouse (BigQuery or Snowflake recommended)
-- Git & GitHub for version control
-
 ## Provided Raw Data
 
 
@@ -111,3 +105,14 @@ Find below the data dictionary of the raw data:
 
 **Note:** You must not modify raw tables.
 
+## Technology Stack
+You must use:
+- dbt Core
+- A cloud warehouse (BigQuery or Snowflake recommended)
+- Git & GitHub for version control
+
+## Required Architecture
+You must implement a layered modeling approach:
+```bash
+raw - staging - intermediate - marts
+```
