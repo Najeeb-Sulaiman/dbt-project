@@ -200,3 +200,42 @@ You must implement:
 
 **Freshness Tests**
 - trips_raw must be < 2 hours old
+
+### 7. Documentation & Governance
+
+Your project must include:
+- Model descriptions
+- Column descriptions
+- Business metric definitions
+- Owner metadata
+- Tags (finance, operations, fraud)
+**You must generate:**
+- dbt docs site
+- Lineage graph
+
+## Expected Outputs
+
+Your final warehouse must support:
+- Daily revenue dashboard
+- City-level profitability
+- Driver leaderboard
+- Rider LTV analysis
+- Payment reliability report
+- Fraud monitoring view
+
+## Required Deliverables
+
+You must submit:
+1. Public GitHub repository
+2. Clear README including:
+    - Architecture diagram
+    - ERD
+    - Data flow explanation
+    - Design decisions
+    - Tradeoffs
+    - Future improvements
+3. dbt lineage screenshot
+4. Sample analytical queries demonstrating insights
+
+## Duration
+1 week
