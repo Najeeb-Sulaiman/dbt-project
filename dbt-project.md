@@ -1,6 +1,5 @@
 # Building a Production-Grade Analytics Platform with dbt
 ## Project Overview
-
 You have been hired as a Data Engineer at AtlasRide, a fast-growing UK mobility startup operating in 5 cities.
 
 AtlasRide provides:
@@ -11,6 +10,19 @@ AtlasRide provides:
 The company recently migrated to a modern data stack and now needs a production-grade transformation layer using dbt.
 
 Your task is to design and implement a scalable, well-tested, documented, and production-ready analytics platform using dbt.
+
+## Business Objectives
+Your models must support the following analytics use cases:
+1. Daily revenue per city
+2. Gross vs net revenue
+3. Corporate vs personal revenue split
+4. Top drivers by revenue
+5. Driver activity monitoring
+6. Rider lifetime value
+7. Payment failure rate
+8. Surge impact analysis
+9. Driver churn tracking
+10. Fraud detection insights
 
 ## Technology Stack
 You must use:
@@ -98,3 +110,4 @@ Find below the data dictionary of the raw data:
 | event_timestamp | Event timestamp  |
 
 **Note:** You must not modify raw tables.
+
