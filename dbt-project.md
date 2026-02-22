@@ -154,7 +154,7 @@ Must include:
 - rider_lifetime_value
 - corporate_trip_flag logic
 - net_revenue calculation
-- fraud indicators:
+- fraud indicators
 - duplicate trip payments
 - failed payment on completed trip
 - extreme surge multiplier (>10)
@@ -165,18 +165,7 @@ You must:
 
 ### 3. Marts Layer
 
-You must implement a star schema.
-
-**Fact Tables**
-- fact_trips
-- fact_payments
-- fact_driver_daily_activity
-
-**Dimension Tables**
-- dim_drivers
-- dim_riders
-- dim_cities
-- dim_date (seed)
+You must implement a star schema that includes Fact and Dimension tables.
 
 ### 4. Snapshots
 Implement SCD Type 2 snapshot for:
