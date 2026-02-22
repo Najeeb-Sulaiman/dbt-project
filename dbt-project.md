@@ -116,3 +116,62 @@ You must implement a layered modeling approach:
 ```bash
 raw - staging - intermediate - marts
 ```
+
+## Required Implementation
+
+### 1. Staging Layer
+Create staging models for each raw table.
+
+The staging models must perform the following where neccessary:
+- Rename columns to snake_case
+- Cast correct data types
+- Deduplicate using primary keys
+- Standardize timestamps
+- Remove invalid or null primary keys
+- Source definitions must include:
+- descriptions
+- freshness checks
+- column tests
+
+### 2. Intermediate Layer
+
+Create reusable transformation logic.
+Must include:
+
+- trip_duration_minutes
+- driver_lifetime_trips
+- rider_lifetime_value
+- corporate_trip_flag logic
+- net_revenue calculation
+- fraud indicators:
+- duplicate trip payments
+- failed payment on completed trip
+- extreme surge multiplier (>10)
+
+You must:
+- Use `ref()` properly
+- Create at least one reusable macro
+
+### 3. Marts Layer
+
+You must implement a star schema.
+
+**Fact Tables**
+- fact_trips
+- fact_payments
+- fact_driver_daily_activity
+
+**Dimension Tables**
+- dim_drivers
+- dim_riders
+- dim_cities
+- dim_date (seed)
+
+### 4. Snapshots
+Implement SCD Type 2 snapshot for:
+- drivers
+
+Track:
+- driver_status changes
+- vehicle changes
+- rating updates
