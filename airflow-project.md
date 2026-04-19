@@ -34,3 +34,6 @@ Submit the following:
 6. Example of a failed DAG run and notification
 7. Example of a backfill execution
 8. Explanation of how idempotency is maintained
+
+## Duration
+2 week (2/05/2026)
