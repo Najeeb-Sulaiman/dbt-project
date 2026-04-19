@@ -24,3 +24,13 @@ Your solution should demonstrate:
 - Clear separation between ingestion, transformation, testing, and alerting
 - Any other best practices
 
+## Required Deliverables
+Submit the following:
+1. Public GitHub repository (It can be the same repo as the dbt project)
+2. Updated README explaining your orchestration design
+3. Updated architecture diagram
+4. Screenshots of DAGs in the Airflow UI
+5. Example of a successful DAG run
+6. Example of a failed DAG run and notification
+7. Example of a backfill execution
+8. Explanation of how idempotency is maintained
