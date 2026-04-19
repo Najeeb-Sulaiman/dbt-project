@@ -36,4 +36,4 @@ Submit the following:
 8. Explanation of how idempotency is maintained
 
 ## Duration
-2 week (2/05/2026)
+2 weeks (2/05/2026)
